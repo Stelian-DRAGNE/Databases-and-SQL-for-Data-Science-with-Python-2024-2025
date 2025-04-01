@@ -3,28 +3,27 @@ CREATE DATABASE IF NOT EXISTS facultate;
 USE facultate;
 CREATE TABLE student 
 
-	-- idstudent cheie primară
-(idstudent INT PRIMARY KEY AUTO_INCREMENT,
+	-- idstudent - cheie primară
+( idstudent INT PRIMARY KEY AUTO_INCREMENT,
 
-	-- nume unic, nenul
+	-- nume - unic, nenul
 nume VARCHAR(255) NOT NULL UNIQUE,
 
-	-- prenume unic, nenul 
+	-- prenume - unic, nenul 
 prenume VARCHAR(255) NOT NULL UNIQUE,
 
 	-- grupa - obligatoriu, cu valori 1,2,3,4  
 -- grupa INT CHECK ( grupa > 0 AND grupa < 5),
 grupa INT NOT NULL CHECK ( grupa in (1,2,3,4)),
 
-	-- email - unic
+	-- email -- unic
 email VARCHAR(255) UNIQUE,
 
 	-- data_incrierii default data curentă
 data_inscrierii DATETIME DEFAULT CURRENT_TIMESTAMP,
 
 	-- statut - admis, respins, neevaluat - cu valoarea default neevaluat
-statut VARCHAR(11) DEFAULT 'neevaluat' 
-	CHECK (statut in ('admis', 'respins', 'neevaluat'))
+statut VARCHAR(11) DEFAULT 'neevaluat' CHECK (statut in ('admis', 'respins', 'neevaluat'))
 );
 
 SELECT * FROM student;
