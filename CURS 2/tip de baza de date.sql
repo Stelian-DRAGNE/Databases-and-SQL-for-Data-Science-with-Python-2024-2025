@@ -1,0 +1,11 @@
+
+## SELECTARE FARA TABELA
+SELECT 10;
+
+SELECT 10 AS 'Nota';
+
+CREATE DATABASE `masini furate`;
+
+SHOW DATABASES;
+
+USE `masini furate`;
