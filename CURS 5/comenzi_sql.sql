@@ -1,34 +1,4 @@
-SHOW DATABASES;
-
 USE universitate;
-
-SELECT * FROM profesor;
-
-SELECT nume prenume FROM profesor;
-
-SELECT nume FROM profesor;
-
-SELECT nume AS "Nume de familie" FROM profesor;
-SELECT nume "Nume de familie" FROM profesor;
-
--- Selecteaza cu ALIAS
-SELECT nume 'prenume' FROM profesor;
-
-SELECT * FROM profesor;
-
-TRUNCATE profesor;
-SELECT * FROM profesor;
-
-SELECT * FROM predare;
-
-TRUNCATE predare;
-SELECT * FROM predare;
-
-TRUNCATE profesor;
-SELECT * FROM profesor;
-
-DELETE FROM profesor WHERE idprofesor >=1;
-SELECT * FROM profesor;
 
 INSERT INTO profesor SET idprofesor = 1, nume = "Popescu", prenume = "Gica", adresa = "1", data_nasterii = "1964-02-01", grad = "I" ;
 INSERT INTO profesor SET idprofesor = 2, nume = "Marin", prenume = "Andreea", adresa = "1", data_nasterii = "1989-12-30", grad = "II" ;
@@ -46,5 +16,3 @@ INSERT INTO profesor SET idprofesor = 13, nume = "Macdonald", prenume = "Brielle
 INSERT INTO profesor SET idprofesor = 14, nume = "Rajala", prenume = "Matilda", adresa = "1", data_nasterii = "1961-08-13", grad = "I" ;
 INSERT INTO profesor SET idprofesor = 15, nume = "Nielsen", prenume = "Freja", adresa = "1", data_nasterii = "1994-06-14", grad = "I" ;
 INSERT INTO profesor SET idprofesor = 16, nume = "Guido", prenume = "Van Rossum", adresa = "1", data_nasterii = "1956-01-31", grad = "I" ;
-
-SELECT * FROM profesor;
