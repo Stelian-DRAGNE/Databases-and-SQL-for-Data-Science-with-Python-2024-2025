@@ -16,3 +16,5 @@ INSERT INTO profesor SET idprofesor = 13, nume = "Macdonald", prenume = "Brielle
 INSERT INTO profesor SET idprofesor = 14, nume = "Rajala", prenume = "Matilda", adresa = "1", data_nasterii = "1961-08-13", grad = "I" ;
 INSERT INTO profesor SET idprofesor = 15, nume = "Nielsen", prenume = "Freja", adresa = "1", data_nasterii = "1994-06-14", grad = "I" ;
 INSERT INTO profesor SET idprofesor = 16, nume = "Guido", prenume = "Van Rossum", adresa = "1", data_nasterii = "1956-01-31", grad = "I" ;
+
+SELECT * FROM profesor;
