@@ -38,3 +38,20 @@ SELECT * FROM postare JOIN utilizator ON postare.id_user = utilizator.id;
 SELECT * FROM utilizator JOIN postare ON utilizator.id = postare.id_user;
 
 SELECT * FROM postare JOIN utilizator ON postare.id_user = utilizator.id;
+
+SELECT postare.id, titlu, nume FROM postare JOIN utilizator ON postare.id_user = utilizator.id;
+
+SELECT postare.id, titlu, nume FROM postare INNER JOIN utilizator ON postare.id_user = utilizator.id;
+
+SELECT * FROM postare LEFT JOIN utilizator ON postare.id_user = utilizator.id;
+
+SELECT * FROM postare RIGHT JOIN utilizator ON postare.id_user = utilizator.id;
+SELECT * FROM utilizator LEFT JOIN postare ON postare.id_user = utilizator.id;
+
+INSERT INTO postare (titlu) VALUES ('Totul e pustiu'), ('Ce inseamna nimic ?');
+
+SELECT * FROM postare;
+
+SELECT * FROM utilizator LEFT JOIN postare ON postare.id_user = utilizator.id;
+SELECT * FROM utilizator RIGHT JOIN postare ON postare.id_user = utilizator.id;
+SELECT * FROM utilizator JOIN postare ON postare.id_user = utilizator.id;
